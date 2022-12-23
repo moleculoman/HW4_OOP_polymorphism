@@ -40,4 +40,13 @@ public class Driver {
     public String stopMoving(){
         return "Остановись!";
     }
+
+    @Override
+    public String toString() {
+        return "Водитель{" +
+                "с именем ='" + getFullName() + '\'' +
+                ", управляет автомобилем =" + isHaveLicense +
+                ", experience=" + getExperience() +
+                '}';
+    }
 }
